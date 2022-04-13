@@ -14,8 +14,7 @@ module.exports = {
       repo: "https://github.com/pjsebastien/souslesetoilesstrapibackend.git",
       path: "/home/ubuntu/sites",
       "pre-deploy-local": "",
-      "post-deploy":
-        "npm install && pm2 reload ecosystem.config.js --env production",
+      "post-deploy": "npm install && pm2 reload ecosystem.config.js --env",
       "pre-setup": "",
     },
   },
