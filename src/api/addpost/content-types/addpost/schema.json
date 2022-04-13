@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "addposts",
+  "info": {
+    "singularName": "addpost",
+    "pluralName": "addposts",
+    "displayName": "addpost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
