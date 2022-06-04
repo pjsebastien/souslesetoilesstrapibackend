@@ -15,7 +15,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::blog-post.blog-post",
-      "inversedBy": "category_blogs"
+      "mappedBy": "category_blogs"
     },
     "name": {
       "type": "string"
