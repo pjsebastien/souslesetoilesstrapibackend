@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_blogs",
+  "info": {
+    "singularName": "category-blog",
+    "pluralName": "category-blogs",
+    "displayName": "CategoryBlog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blog_posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog-post.blog-post",
+      "inversedBy": "category_blogs"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
