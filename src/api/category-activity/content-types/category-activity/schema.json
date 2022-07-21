@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category-activity",
     "pluralName": "category-activities",
-    "displayName": "categoryActivity"
+    "displayName": "categoryActivity",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,22 @@
       "type": "string"
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "activities": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::activity.activity",
       "mappedBy": "category_activities"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
