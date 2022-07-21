@@ -44,6 +44,25 @@
     "Slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 62
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::post.post",
+      "inversedBy": "blog_posts"
+    },
+    "activities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::activity.activity",
+      "inversedBy": "blog_posts"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_activities",
+  "info": {
+    "singularName": "category-activity",
+    "pluralName": "category-activities",
+    "displayName": "categoryActivity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "activities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::activity.activity",
+      "mappedBy": "category_activities"
+    }
+  }
+}
